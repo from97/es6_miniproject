@@ -1,0 +1,41 @@
+body {
+	background: linear-gradient(to bottom, #f7fbfc 0%,#d9edf2 40%,#add9e4 100%);
+}
+
+h1 {
+	margin: 40px 0 0 35px;
+}
+
+ul {
+	width: 750px;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px 0;
+	margin-top: 50px;
+}
+
+li {
+	width: 200px;
+	height: 150px;
+	border: 1px solid grey;
+	box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+	background-color:ivory;
+	line-height: 1.4em;
+}
+
+span {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: lightblue;
+	padding: 5px;
+	border: 1px solid grey;
+	cursor: pointer;
+}
+
+h2 {
+	margin: 45px 0 40px 35px;
+}
