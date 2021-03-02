@@ -8,18 +8,17 @@
   "description": "es6 miniproject inflearn",
   "main": "index.js",
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.8",
-    "babel-loader": "^8.2.2",
-    "html-webpack-plugin": "^5.2.0",
-    "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "babel-loader": "^8.2.2"
   },
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"build": "webpack",
-    "start": "webpack serve"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir dist; babel src -o dist/bundle.js",
+    "start": "node bundle.js",
+    "watch": "mkdir dist; babel src -w -o dist/bundle.js"
   },
   "author": "seomoon",
   "license": "ISC"
